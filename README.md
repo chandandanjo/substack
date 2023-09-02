@@ -11,38 +11,38 @@ Here's an example of how to use this library:
 from substack import Substack
 
 # Create a Substack object
-substack = Substack()
+substack_object = Substack()
 
 # Log in using your email and password
-result = substack.login_from_mail('your_email@example.com', 'your_password')
+result = substack_object.login_from_mail('your_email@example.com', 'your_password')
 print(result)
 
 # OR Log in using a saved cookie file
-result = substack.login_from_saved_cookie('cookie.json')
+result = substack_object.login_from_saved_cookie('cookie.json')
 print(result)
 
 # OR Log in using an uploaded cookie
-result = substack.login_from_uploaded_cookie('{"your_cookie_data": "here"}')
+result = substack_object.login_from_uploaded_cookie('{"your_cookie_data": "here"}')
 print(result)
 
 # Retrieve your username
-username = substack.user_name()
+username = substack_object.user_name()
 print(f'Username: {username}')
 
 # Enable recovery questions
-substack.enable_recovery_questions()
+substack_object.enable_recovery_questions()
 
 # Disable recovery questions
-substack.disable_recovery_questions()
+substack_object.disable_recovery_questions()
 
 # Enable two-factor authentication
-substack.two_factor_auth()
+substack_object.two_factor_auth()
 
 # Disable two-factor authentication
-substack.disable_two_factor_auth()
+substack_object.disable_two_factor_auth()
 
 # Retrieve your profile image URL
-profile_image_url = substack.profile_image()
+profile_image_url = substack_object.profile_image()
 print(f'Profile Image URL: {profile_image_url}')
 ```
 
