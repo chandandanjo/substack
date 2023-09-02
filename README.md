@@ -8,7 +8,7 @@ This Python library provides a simple way to interact with Substack's web servic
 Here's an example of how to use this library:
 
 ```python
-from substack_api import Substack
+from substack import Substack
 
 # Create a Substack object
 substack = Substack()
